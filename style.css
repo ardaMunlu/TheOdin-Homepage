@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url(./assets/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+:root {
+  --d4: #880f82;
+  --d3: #ff008c;
+  --d2: #FFD6E8;
+  --d1: #FFEEF7;
+
+  --s1: #EACBB6;
+  --s2: #F1D3B1;
+  --black: #000;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+/* HEADER */
+
+body::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 45rem;
+  background-color: var(--d4);
+  transform-origin: 0;  
+  transform: skewY(-10deg);
+  box-shadow: 0rem 0.1rem 1rem var(--d2);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.photo-container {
+  position: relative;
+}
+
+.photo-container img {
+  max-height: 30rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.1rem 0.8rem #FFD6E8  ;
+}
+
+.image-description {
+  position: absolute;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 2.6rem;
+  bottom: -7%; left: 15%;
+  text-align: center;
+  color: white;
+}
+
+.about-me-container {
+  background-color: white;
+  padding: 1.5rem;
+  max-width: 50rem;
+  box-shadow: 0rem 0.1rem 1rem black;
+}
+
+.about-me-container h1 {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 3.2rem;
+}
+
+.about-me-container p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.about-me-container footer {
+  display: flex;
+  justify-content: end;
+  gap: 0.8rem;
+  padding-top: 2.5rem;
+  padding-right: 1rem;
+}
+
+.about-me-container svg{
+  height: 2rem;
+}
